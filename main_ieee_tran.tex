@@ -13,6 +13,7 @@
 \usepackage{tikz}
 \usetikzlibrary{shapes,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri,calc}
 \usepackage[colorlinks,linkcolor=black,anchorcolor=black,citecolor=black, urlcolor=blue]{hyperref}
+\usepackage{caption}
 \usepackage{subcaption}
 \usepackage{cleveref}
 \captionsetup[table]{skip = 3pt}
@@ -37,6 +38,19 @@
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
     
+\tikzset{%
+  every neuron/.style={
+    circle,
+    draw,
+    minimum size=0.5cm
+  },
+  neuron missing/.style={
+    draw=none, 
+    scale=2,
+    text height=0.333cm,
+    execute at begin node=$\vdots$
+  },
+}
 
 \begin{document}
 
@@ -109,7 +123,7 @@ wenh-06-10@tsinghua.edu.cn}
 
 \maketitle
 
-\resetcounter[footnote]
+\setcounter{footnote}{0}
 
 \input{content_ieee_trans/abstract}
 \input{content_ieee_trans/introduction}
@@ -117,6 +131,9 @@ wenh-06-10@tsinghua.edu.cn}
 \input{content_ieee_trans/method}
 \input{content_ieee_trans/experiments}
 \input{content_ieee_trans/conclusion}
+
+
+\input{playground}
 
 
 \bibliographystyle{IEEEtran}

@@ -22,6 +22,7 @@
 \usepackage{tikz}
 \usetikzlibrary{shapes,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri,calc}
 \usepackage[colorlinks,linkcolor=black,anchorcolor=black,citecolor=black, urlcolor=blue]{hyperref}
+\usepackage{caption}
 \usepackage{subcaption}
 \usepackage{cleveref}
 \captionsetup[table]{skip = 3pt}
@@ -32,6 +33,19 @@
 \usepackage{array}
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 
+\tikzset{%
+  every neuron/.style={
+    circle,
+    draw,
+    minimum size=0.5cm
+  },
+  neuron missing/.style={
+    draw=none, 
+    scale=2,
+    text height=0.333cm,
+    execute at begin node=$\vdots$
+  },
+}
 
 \begin{document}
 
@@ -68,6 +82,7 @@ JingDong Health Inc., Beijing 101111, China
 
 \maketitle
 
+
 \setcounter{footnote}{0}
 
 \input{content_springer_lncs/abstract}
@@ -76,6 +91,9 @@ JingDong Health Inc., Beijing 101111, China
 \input{content_springer_lncs/method}
 \input{content_springer_lncs/experiments}
 \input{content_springer_lncs/conclusion}
+
+
+\input{playground}
 
 
 \bibliographystyle{splncs04}
