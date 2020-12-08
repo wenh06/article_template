@@ -1,0 +1,39 @@
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri,calc,hobby}
+\usepackage[colorlinks,linkcolor=black,anchorcolor=black,citecolor=black, urlcolor=blue]{hyperref}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{cleveref}
+\captionsetup[table]{skip = 3pt}
+\captionsetup[subfigure]{subrefformat=simple}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{etoolbox,siunitx}
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+\tikzset{%
+  every neuron/.style={
+    circle,
+    draw,
+    minimum size=0.5cm
+  },
+  neuron missing/.style={
+    draw=none, 
+    scale=2,
+    text height=0.333cm,
+    execute at begin node=$\vdots$
+  },
+}
+
+\tikzstyle{block} = [rectangle, draw, fill = blue!20, text width = 8em, text centered, rounded corners, inner sep = 8pt, minimum height = 4em]
+\tikzstyle{wideblock} = [rectangle, draw, fill = blue!20, text width = 13em, text centered, rounded corners, inner sep = 11pt, minimum height = 4em]
+\tikzstyle{smallblock} = [rectangle, draw, fill = blue!20, text width = 5em, text centered, rounded corners, inner sep = 4pt, minimum height = 3em]
+\tikzstyle{emptyblock} = [rectangle, text width = 8em, text centered, minimum height = 4em]

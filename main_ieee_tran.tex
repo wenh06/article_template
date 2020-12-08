@@ -4,25 +4,8 @@
 \documentclass[conference]{IEEEtran}
 \IEEEoverridecommandlockouts
 % The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
-\usepackage{cite}
-\usepackage{amsmath,amssymb,amsfonts}
-\usepackage{algorithmic}
-\usepackage{graphicx}
-\usepackage{textcomp}
-\usepackage{xcolor}
-\usepackage{tikz}
-\usetikzlibrary{shapes,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri,calc}
-\usepackage[colorlinks,linkcolor=black,anchorcolor=black,citecolor=black, urlcolor=blue]{hyperref}
-\usepackage{caption}
-\usepackage{subcaption}
-\usepackage{cleveref}
-\captionsetup[table]{skip = 3pt}
-\captionsetup[subfigure]{subrefformat=simple}
-\usepackage{multirow}
-\usepackage{booktabs}
-\usepackage{etoolbox,siunitx}
-\usepackage{array}
-\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+\input{common_preamble}
 
 \sisetup{detect-weight,mode=text}
 % for avoiding siunitx using bold extended
@@ -37,20 +20,7 @@
 
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
-    
-\tikzset{%
-  every neuron/.style={
-    circle,
-    draw,
-    minimum size=0.5cm
-  },
-  neuron missing/.style={
-    draw=none, 
-    scale=2,
-    text height=0.333cm,
-    execute at begin node=$\vdots$
-  },
-}
+
 
 \begin{document}
 
