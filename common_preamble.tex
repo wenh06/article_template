@@ -1,4 +1,5 @@
 \usepackage{cite}
+\usepackage{academicons}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{algorithmic}
 \usepackage{graphicx}
@@ -37,3 +38,7 @@
 \tikzstyle{wideblock} = [rectangle, draw, fill = blue!20, text width = 13em, text centered, rounded corners, inner sep = 11pt, minimum height = 4em]
 \tikzstyle{smallblock} = [rectangle, draw, fill = blue!20, text width = 5em, text centered, rounded corners, inner sep = 4pt, minimum height = 3em]
 \tikzstyle{emptyblock} = [rectangle, text width = 8em, text centered, minimum height = 4em]
+
+\newcommand*\samethanks[1][\value{footnote}]{\footnotemark[#1]}
+
+\newcommand{\orcid}[1]{\href{https://orcid.org/#1}{\textcolor[HTML]{A6CE39}{\aiOrcid}}}

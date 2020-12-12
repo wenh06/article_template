@@ -1,11 +1,23 @@
 % !TEX program = xelatex
 % !BIB program = bibtex
 
-\documentclass[conference]{IEEEtran}
+\documentclass[compsoc]{IEEEtran}
+\def\IEEEcompsocdiamondline{}
 \IEEEoverridecommandlockouts
 % The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
 
+\renewcommand\IEEEkeywordsname{\bf Keywords}
+
+\makeatletter
+\renewcommand\footnoterule{%
+\kern-3\p@
+\hrule\@width.4\columnwidth
+\kern2.6\p@}
+\makeatother
+
 \input{common_preamble}
+
+\usepackage[left=1.77cm,right=1.77cm,top=1.55cm,bottom=2.35cm]{geometry}
 
 \sisetup{detect-weight,mode=text}
 % for avoiding siunitx using bold extended
@@ -23,6 +35,7 @@
 
 
 \begin{document}
+\bstctlcite{IEEEexample:BSTcontrol}
 
 
 \title{Article Template \\
@@ -33,63 +46,21 @@
 
 % 1\textsuperscript{st}
 
-\author{\IEEEauthorblockN{Hao Wen}
-\IEEEauthorblockA{\textit{Dept. Computer Science \& Technology} \\
-\textit{Tsinghua University}\\
-Beijing, China \\
-wenh-06-10@tsinghua.edu.cn}
-% \and
-% \IEEEauthorblockN{Wenjian Yu}
-% \IEEEauthorblockA{\textit{Dept. Computer Science \& Technology} \\
-% \textit{Tsinghua University}\\
-% Beijing, China \\
-% yu-wj@tsinghua.edu.cn}
-% \and
-% \IEEEauthorblockN{Yuanqing Wu}
-% \IEEEauthorblockA{\textit{JingDong Health Inc.}\\
-% Beijing, China \\
-% wuyuanqing@jd.com}
-% \and
-% \IEEEauthorblockN{Lu Wang}
-% \IEEEauthorblockA{\textit{}\\
-% Beijing, China \\
-% @jd.com}
-% \and
-% \IEEEauthorblockN{Jun Zhao}
-% \IEEEauthorblockA{\textit{JingDong Health Inc.}\\
-% Beijing, China \\
-% zhaojun10@jd.com}
-% \and
-% \IEEEauthorblockN{Xiaolong Liu}
-% \IEEEauthorblockA{\textit{JingDong Health Inc.}\\
-% Beijing, China \\
-% liuxiaolong10@jd.com}
-% \and
-% \IEEEauthorblockN{Zhexiang Kuang}
-% \IEEEauthorblockA{\textit{JingDong Health Inc.}\\
-% Beijing, China \\
-% kuangzhexiang@jd.com}
-% \and
-% \IEEEauthorblockN{Rong Fan}
-% \IEEEauthorblockA{\textit{JingDong Health Inc.}\\
-% Beijing, China \\
-% fanrong18@jd.com}
-% \and
-% \IEEEauthorblockN{Shuai Yang}
-% \IEEEauthorblockA{\textit{Jing Dong Health Inc.}\\
-% Beijing, China \\
-% yangshuai15@jd.com}
-% \and
-% \IEEEauthorblockN{Jeethan Jue Zhang}
-% \IEEEauthorblockA{\textit{Jing Dong Health Inc.}\\
-% Beijing, China \\
-% zhangjue@jd.com}
-% \and
-% \IEEEauthorblockN{Lei Han}
-% \IEEEauthorblockA{\textit{Jing Dong Health Inc.}\\
-% Beijing, China \\
-% hanlei70@jd.com}
+\DeclareRobustCommand*{\IEEEauthorrefmark}[1]{%
+  \raisebox{0pt}[0pt][0pt]{\textsuperscript{\footnotesize\ensuremath{#1}}}}
+
+\author{
+    \IEEEauthorblockN{
+        Hao Wen\IEEEauthorrefmark{1,2}
+    }\\
+    \IEEEauthorblockA{
+        \IEEEauthorrefmark{1}Dept. of Computer Science and Technology, BNRist, Tsinghua University, Beijing, 100084, China\\
+        \IEEEauthorrefmark{2}Beijing Jingdong Shangke Information Technology Co., Ltd., Beijing, 101111, China\\
+        \IEEEauthorrefmark{1}{\small\{wenh-06-10\}@tsinghua.edu.cn}\\
+        \IEEEauthorrefmark{2}{\small\{wenhao71\}@jd.com}
+    }
 }
+
 
 \maketitle
 

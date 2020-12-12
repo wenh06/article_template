@@ -5266,8 +5266,8 @@ between column types.}%
 \fi
 
 % compsoc journals use \footnotesize, compsoc conferences use normalsize
-\@IEEEcompsoconly{\def\@IEEEabskeysecsize{\footnotesize}}
-\@IEEEcompsocconfonly{\def\@IEEEabskeysecsize{\small}}
+\@IEEEcompsoconly{\def\@IEEEabskeysecsize{\large}}
+\@IEEEcompsocconfonly{\def\@IEEEabskeysecsize{\large}}
 
 
 % V1.6 have abstract and keywords strip leading spaces, pars and newlines
@@ -5298,7 +5298,7 @@ between column types.}%
   \ifCLASSOPTIONconference% compsoc conference
 \def\abstract{\normalfont\@IEEEtweakunitybaselinestretch{1.15}\bfseries
     \if@twocolumn
-      \@IEEEabskeysecsize\noindent\textit{\abstractname}---\relax
+      \@IEEEabskeysecsize\noindent\textit{\abstractname} --- \relax
     \else
       \bgroup\par\addvspace{0.5\baselineskip}\centering\vspace{-1.78ex}\@IEEEabskeysecsize\textbf{\abstractname}\par\addvspace{0.5\baselineskip}\egroup\quotation\@IEEEabskeysecsize%
     \fi\@IEEEgobbleleadPARNLSP}
@@ -5312,14 +5312,14 @@ between column types.}%
   \else% compsoc not conference
 \def\abstract{\normalfont\@IEEEtweakunitybaselinestretch{1.15}\sffamily
     \if@twocolumn
-      \@IEEEabskeysecsize\noindent\textbf{\abstractname}---\relax
+      \@IEEEabskeysecsize\noindent\textbf{\abstractname} --- \relax
     \else
       \bgroup\par\addvspace{0.5\baselineskip}\centering\vspace{-1.78ex}\@IEEEabskeysecsize\textbf{\abstractname}\par\addvspace{0.5\baselineskip}\egroup\quotation\@IEEEabskeysecsize%
     \fi\@IEEEgobbleleadPARNLSP}
 \def\IEEEkeywords{\normalfont\@IEEEtweakunitybaselinestretch{1.15}\sffamily
     \if@twocolumn
       \@IEEEabskeysecsize\vskip 0.5\baselineskip plus 0.25\baselineskip minus 0.25\baselineskip\noindent
-      \textbf{\IEEEkeywordsname}---\relax
+      \textbf{\IEEEkeywordsname}: \relax
     \else
       \bgroup\par\addvspace{0.5\baselineskip}\centering\@IEEEabskeysecsize\textbf{\IEEEkeywordsname}\par\addvspace{0.5\baselineskip}\egroup\quotation\@IEEEabskeysecsize%
     \fi\@IEEEgobbleleadPARNLSP}
