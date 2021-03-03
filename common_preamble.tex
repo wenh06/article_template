@@ -19,6 +19,7 @@
 \usepackage{etoolbox,siunitx}
 \usepackage{array}
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\usepackage{adjustbox}
 
 \tikzset{%
   every neuron/.style={
@@ -38,6 +39,7 @@
 \tikzstyle{wideblock} = [rectangle, draw, fill = blue!20, text width = 13em, text centered, rounded corners, inner sep = 11pt, minimum height = 4em]
 \tikzstyle{smallblock} = [rectangle, draw, fill = blue!20, text width = 5em, text centered, rounded corners, inner sep = 4pt, minimum height = 3em]
 \tikzstyle{emptyblock} = [rectangle, text width = 8em, text centered, minimum height = 4em]
+\tikzstyle{smallcircleblock} = [circle, draw, text width = 0.7em, text centered]
 
 \newcommand*\samethanks[1][\value{footnote}]{\footnotemark[#1]}
 
