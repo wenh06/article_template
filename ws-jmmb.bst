@@ -1,4 +1,8 @@
 %%
+%% modified from IEEEtran.bst
+%%
+
+%%
 %% IEEEtran.bst
 %% BibTeX Bibliography Style file for IEEE Journals and Conferences (unsorted)
 %% Version 1.12 (2007/01/11)
@@ -164,8 +168,8 @@ FUNCTION {default.is.dash.repeated.names} { #1 }
 
 
 % The default name format control string.
-FUNCTION {default.name.format.string}{ "{f.~}{vv~}{ll}{, jj}" }
-
+% FUNCTION {default.name.format.string}{ "{f.~}{vv~}{ll}{, jj}" }
+FUNCTION {default.name.format.string}{ "{vv~}{ll}{~f{}}{, jj}" }
 
 % The default LaTeX font command for the names.
 FUNCTION {default.name.latex.cmd}{ "" }
@@ -225,7 +229,8 @@ FUNCTION {completed.message}
 %% STRING CONSTANTS %%
 %%%%%%%%%%%%%%%%%%%%%%
 
-FUNCTION {bbl.and}{ "and" }
+% FUNCTION {bbl.and}{ "and" }
+FUNCTION {bbl.and}{ "" }
 FUNCTION {bbl.etal}{ "et~al." }
 FUNCTION {bbl.editors}{ "eds." }
 FUNCTION {bbl.editor}{ "ed." }
