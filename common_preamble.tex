@@ -9,7 +9,9 @@
 \usepackage{xcolor}
 \usepackage{tikz}
 \usetikzlibrary{shapes,arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri,calc,hobby}
-\usepackage[colorlinks,linkcolor=black,anchorcolor=black,citecolor=black, urlcolor=blue]{hyperref}
+% \tikzexternalize[prefix=tikz/,optimize command away=\includepdf]
+% \usepackage[colorlinks,linkcolor=black,anchorcolor=black,citecolor=black, urlcolor=blue]{hyperref}
+\usepackage{hyperref}
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{cleveref}
@@ -22,6 +24,7 @@
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 \usepackage{adjustbox}
 \usepackage{datetime2}
+
 
 \tikzset{%
   every neuron/.style={

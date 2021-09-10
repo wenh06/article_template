@@ -1,6 +1,9 @@
 \documentclass{mbe}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{common_preamble}
+
 \usepackage{txfonts}
 \def\typeofarticle{Type of article}
 \def\currentvolume{5}
@@ -19,6 +22,8 @@
 
 \numberwithin{equation}{section}
 \DeclareMathOperator*{\essinf}{ess\,inf}
+
+% \tikzexternalize[prefix=tikz/,optimize command away=\includepdf]
 
 
 \begin{document}
